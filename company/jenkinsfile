@@ -1,4 +1,4 @@
-def name="https://github.com/imbhascker13/companies.git"
+
 node {
  try  {
  notify('Job Started') 
@@ -9,7 +9,7 @@ node {
   }
     stage('TruffleHog')
     {
-     sh label: '', script: 'trufflehog --regex --entropy=False name'
+     sh label: '', script: 'trufflehog --regex --entropy=False https://github.com/imbhascker13/companies.git'
      }
  def project_path="company"
  
