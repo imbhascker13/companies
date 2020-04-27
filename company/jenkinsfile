@@ -9,7 +9,7 @@ node {
   }
     stage('TruffleHog')
     {
-     sh label: '', script: 'truffleHog --regex --entropy=False name'
+     sh label: '', script: 'trufflehog --regex --entropy=False name'
      }
  def project_path="company"
  
